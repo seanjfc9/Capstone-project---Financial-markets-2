@@ -1,0 +1,18 @@
+{
+  "ticker": "AMZN",
+  "target": "Open_Direction (1 if Open(t) > Close(t-1))",
+  "features": [
+    "X13_DOW_Fri",
+    "X15_Nikkei_PreOpen",
+    "X16_Futures_PreOpen"
+  ],
+  "standardised": true,
+  "train_rows": 942,
+  "test_rows": 236,
+  "train_start": "2021-01-05",
+  "test_end": "2025-12-30",
+  "refit_train_auc": 0.7114,
+  "refit_test_auc": 0.7858,
+  "reported_test_auc_statsmodels": 0.7947376179245282,
+  "model_type": "sklearn LogisticRegression(C=1e10) refit of the statsmodels Logit"
+}

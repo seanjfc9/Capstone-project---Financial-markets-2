@@ -1,0 +1,22 @@
+{
+  "ticker": "MSFT",
+  "target": "Open_Direction (1 if Open(t) > Close(t-1))",
+  "features": [
+    "X2_Return_t2",
+    "X6_MACD_t1",
+    "X7_SP500_Return_t1",
+    "X8_VIX_t1",
+    "X11_DOW_Wed",
+    "X15_Nikkei_PreOpen",
+    "X16_Futures_PreOpen"
+  ],
+  "standardised": true,
+  "train_rows": 942,
+  "test_rows": 236,
+  "train_start": "2021-01-05",
+  "test_end": "2025-12-30",
+  "refit_train_auc": 0.7235,
+  "refit_test_auc": 0.6965,
+  "reported_test_auc_statsmodels": 0.7023460410557185,
+  "model_type": "sklearn LogisticRegression(C=1e10) refit of the statsmodels Logit"
+}
